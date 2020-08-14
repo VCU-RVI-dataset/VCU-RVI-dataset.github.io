@@ -250,7 +250,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-14 13:00:09" itemprop="dateModified" datetime="2020-08-14T13:00:09-04:00">2020-08-14</time>
+                <time title="Modified: 2020-08-14 13:12:30" itemprop="dateModified" datetime="2020-08-14T13:12:30-04:00">2020-08-14</time>
               </span>
 
           
@@ -273,9 +273,7 @@
 <h2 id="References"><a href="#References" class="headerlink" title="References:"></a>References:</h2><div id="refer-anchor-1"></div>
 
 <ul>
-<li><p>[1]: Paul Furgale, Joern Rehder, Roland Siegwart (2013). Unified Temporal and Spatial Calibration for Multi-Sensor Systems. In Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Tokyo, Japan.</p>
-</li>
-<li></li>
+<li>[1]: Paul Furgale, Joern Rehder, Roland Siegwart (2013). Unified Temporal and Spatial Calibration for Multi-Sensor Systems. In Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Tokyo, Japan.</li>
 </ul>
 
       
@@ -327,7 +325,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-14 13:11:31" itemprop="dateModified" datetime="2020-08-14T13:11:31-04:00">2020-08-14</time>
+                <time title="Modified: 2020-08-14 13:12:59" itemprop="dateModified" datetime="2020-08-14T13:12:59-04:00">2020-08-14</time>
               </span>
 
           
@@ -346,8 +344,10 @@
 <p>The transformation matrix from MoCap to the marker’s coordinate system is described as $T_H^M$. Since the camera-IMU extrinsic transformation matrix ($T_c^b$) is known, we need the camera-maker transformation matrix ($T_c^H$) to compute $T_M^b$.  $T_c^H$ can be obtained through a hand-eye calibration approach <a href="#refer-anchor-1"><sup>1</sup></a>. To solve $T_c^H$, we recorded a data sequence by moving the SC around a checkboard (maintaining the checkboard in the SC’s field of view). Then we employed Zhang’s method <a href="#refer-anchor-2"><sup>2</sup></a> to compute the camera poses. Given the camera poses and the marker’s poses observed from the MoCap, we used Daniilidis’ method <a href="#refer-anchor-1"><sup>1</sup></a> to estimate $T_c^H$ and achieved a final pose residual about 0.6703 mm. Given $T_c^H$, $T_M^b$ is given by $T_{M}^{b}=T_{c}^{b}\left(T_{c}^{H}\right)^{-1}\left(T_{H}^{M}\right)^{-1}$</p>
 <p><strong>Dataset download</strong> <a target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1diqBgnHguA5lumcUvXhmcOVzg-KTo2kw?usp=sharing">hand-eye - Google Drive</a></p>
 <h2 id="References"><a href="#References" class="headerlink" title="References:"></a>References:</h2><div id="refer-anchor-1"></div>
-- [1]: Daniilidis, K. “Hand-eye calibration using dual quaternions,” The International Journal of Robotics Research, 18(3), 286-298.
 
+<ul>
+<li>[1]: Daniilidis, K. “Hand-eye calibration using dual quaternions,” The International Journal of Robotics Research, 18(3), 286-298.</li>
+</ul>
 <div id="refer-anchor-2"></div>
 - [2]: Zhang, Zhengyou. "A flexible new technique for camera calibration." IEEE Transactions on pattern analysis and machine intelligence 22.11 (2000): 1330-1334.
 
