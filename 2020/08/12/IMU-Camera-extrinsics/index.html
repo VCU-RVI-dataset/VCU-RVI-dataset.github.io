@@ -28,7 +28,7 @@
 <meta property="og:description" content="We recorded a sequence about three minutes and employed the Kalibr toolbox 1 to estimate the extrinsic transformation matrix ($T_c^b$) between the color camera and the IMU. We also measured the transl">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-08-12T20:41:03.000Z">
-<meta property="article:modified_time" content="2020-08-14T16:54:13.654Z">
+<meta property="article:modified_time" content="2020-08-14T17:00:09.962Z">
 <meta property="article:author" content="He Zhang, Lingqiu Jin and Cang Ye">
 <meta property="article:tag" content="Calibration">
 <meta property="article:tag" content="Dataset">
@@ -197,7 +197,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-14 12:54:13" itemprop="dateModified" datetime="2020-08-14T12:54:13-04:00">2020-08-14</time>
+                <time title="Modified: 2020-08-14 13:00:09" itemprop="dateModified" datetime="2020-08-14T13:00:09-04:00">2020-08-14</time>
               </span>
 
           
@@ -211,7 +211,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>We recorded a sequence about three minutes and employed the Kalibr toolbox <a href="#refer-anchor-1"><sup>1</sup></a> to estimate the extrinsic transformation matrix ($T_c^b$) between the color camera and the IMU. We also measured the translation from the color camera to the IMU with a vernier scale. The extrinsic T_c^b provided by Occipital is more accurate than our calibration result, comparing to the ruler-measurement. Therefore, we used the extrinsic transformation matrix provided by Occipital in our evaluation.</p>
+        <p>We recorded a sequence about three minutes and employed the Kalibr toolbox <a href="#refer-anchor-1"><sup>1</sup></a> to estimate the extrinsic transformation matrix ($T_c^b$) between the color camera and the IMU. We also measured the translation from the color camera to the IMU with a vernier scale. The extrinsic $T_c^b$ provided by Occipital is more accurate than our calibration result, comparing to the ruler-measurement. Therefore, we used the extrinsic transformation matrix provided by Occipital in our evaluation.</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">body_T_cam0:</span> <span class="type">!!opencv</span><span class="string">-matrix</span> <span class="comment"># Timu2c_1 Tu2c</span></span><br><span class="line">   <span class="attr">rows:</span> <span class="number">4</span></span><br><span class="line">   <span class="attr">cols:</span> <span class="number">4</span></span><br><span class="line">   <span class="attr">dt:</span> <span class="string">d</span></span><br><span class="line">   <span class="attr">data:</span> [<span class="number">0.00193013</span>, <span class="number">-0.999997</span>, <span class="number">0.00115338</span>, <span class="number">-0.00817048</span>,</span><br><span class="line">      <span class="number">-0.999996</span>, <span class="number">-0.0019327</span>, <span class="number">-0.00223606</span>, <span class="number">0.015075</span>,</span><br><span class="line">      <span class="number">0.00223829</span>, <span class="number">-0.00114906</span>, <span class="number">-0.999997</span>, <span class="number">-0.0110795</span>,</span><br><span class="line">      <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"><span class="attr">body_T_cam1:</span> <span class="type">!!opencv</span><span class="string">-matrix</span> <span class="comment"># Timu2c_2, Tc1_2_c2 is a virtual transformation [I,t] t = [0.1, 0, 0], note &quot;mbf&quot; in estimator_dpt.cpp</span></span><br><span class="line">   <span class="attr">rows:</span> <span class="number">4</span></span><br><span class="line">   <span class="attr">cols:</span> <span class="number">4</span></span><br><span class="line">   <span class="attr">dt:</span> <span class="string">d</span></span><br><span class="line">   <span class="attr">data:</span> [<span class="number">0.00193013</span>, <span class="number">-0.999997</span>, <span class="number">0.00115338</span>, <span class="number">-0.007977467</span>,</span><br><span class="line">      <span class="number">-0.999996</span>, <span class="number">-0.0019327</span>, <span class="number">-0.00223606</span>, <span class="number">-0.0849246</span>,</span><br><span class="line">      <span class="number">0.00223829</span>, <span class="number">-0.00114906</span>, <span class="number">-0.999997</span>, <span class="number">-0.010855671</span>,</span><br><span class="line">      <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>Dataset download</strong> <a target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1TzVq_GvnhUQSWwMMWM0rTgv4tmiJj1OI?usp=sharing">calibrate_imu_cam - Google Drive</a></p>
 <h2 id="References"><a href="#References" class="headerlink" title="References:"></a>References:</h2><div id="refer-anchor-1"></div>
 
 <ul>
@@ -238,8 +243,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/08/12/IMU-intrinsics/" rel="prev" title="IMU intrinsics">
-      <i class="fa fa-chevron-left"></i> IMU intrinsics
+    <a href="/2020/08/12/MoCap-IMU-extrinsics/" rel="prev" title="IMU-Camera extrinsics">
+      <i class="fa fa-chevron-left"></i> IMU-Camera extrinsics
     </a></div>
       <div class="post-nav-item">
     <a href="/2020/08/12/Temporal-Sychonization/" rel="next" title="Temporal Sychonization">
@@ -317,7 +322,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
